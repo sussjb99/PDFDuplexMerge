@@ -1,0 +1,95 @@
+============================================================
+THIRD-PARTY COMPONENTS AND THEIR LICENCES
+============================================================
+
+This project bundles third-party software. This file records what
+is bundled, under which licence, and where the corresponding
+source code can be obtained.
+
+
+------------------------------------------------------------
+1. poppler - PDF rendering library
+------------------------------------------------------------
+
+What is bundled:
+    tools/poppler/Library/bin/         pdftoppm.exe, pdfinfo.exe
+                                       and their required DLLs
+    tools/poppler/share/poppler/       cMap, cidToUnicode,
+                                       nameToUnicode, unicodeMap
+                                       encoding data
+
+Version: 26.09.0 (Windows build)
+
+Licence: GNU General Public License v2.0 or later
+         The full licence text is included at
+         tools/poppler/share/poppler/COPYING.gpl2
+
+Source code:
+    https://poppler.freedesktop.org/
+    https://gitlab.freedesktop.org/poppler/poppler
+
+If you require the complete corresponding source code for the
+poppler binaries bundled here, it may be obtained from the URLs
+above, or requested from the project maintainer (sussjb99).
+
+
+------------------------------------------------------------
+2. poppler-data - encoding files for CJK and Cyrillic
+------------------------------------------------------------
+
+What is bundled:
+    tools/poppler/share/poppler/cMap/          Adobe cmap tables
+    tools/poppler/share/poppler/cidToUnicode/
+    tools/poppler/share/poppler/nameToUnicode/
+    tools/poppler/share/poppler/unicodeMap/
+
+Licences (the data files are NOT under the poppler licence):
+    cMap files        - Apache License 2.0 style, Adobe Systems
+                        Incorporated. See COPYING.adobe.
+    cidToUnicode,
+    nameToUnicode,
+    unicodeMap        - GNU General Public License v2 or later,
+                        Copyright Glyph & Cog, LLC. See COPYING.gpl2.
+
+Source code:
+    https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+
+
+------------------------------------------------------------
+3. Python packages used at runtime
+------------------------------------------------------------
+
+These are installed by pip from PyPI and are not vendored in the
+repository. Each carries its own licence, which is available on
+its PyPI page:
+
+    PySide6            - GNU LGPL v3 / commercial dual licence
+    pypdf              - BSD 3-Clause
+    pdf2image          - MIT
+    opencv-python      - BSD 3-Clause
+    numpy              - BSD 3-Clause
+    Pillow             - MIT (historically HPND)
+
+
+------------------------------------------------------------
+4. OpenCV video codec note
+------------------------------------------------------------
+
+OpenCV normally downloads FFmpeg libraries for video I/O. This
+application performs no video operations, and the build script
+removes opencv_videoio_ffmpeg500_64.dll from the packaged output.
+No FFmpeg code is distributed with this project.
+
+
+------------------------------------------------------------
+5. Licence of this project
+------------------------------------------------------------
+
+PDF Duplex Merge Tool is licensed under the GNU General Public
+License v3.0 or later (see LICENSE.txt).
+
+The GPL permits redistribution of the combined work provided the
+corresponding source for the covered components is made available.
+The source for this project's own code is in this repository; the
+source for poppler and poppler-data is referenced in sections 1
+and 2 above.
