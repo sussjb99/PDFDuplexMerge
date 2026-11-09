@@ -1,0 +1,14 @@
+# PDF Duplex Merge - runtime dependencies (Python 3.14)
+# Verified against the code in pdf_deskew.py, duplex_merge.py and
+# pdf_duplex_merge_gui.py. Versions pinned to what this build was tested on.
+
+pypdf==7.0.0
+pillow==13.0.0
+numpy==2.5.4
+opencv-python==5.0.0.93
+pdf2image==1.17.0
+PySide6==6.12.0
+
+# Build-time only - not imported by the application, but needed to
+# produce the frozen executable in packaging/build.bat:
+#   pyinstaller==6.22.3
