@@ -248,7 +248,7 @@ If PDF Duplex Merge Tool saves you time, consider supporting development:
 
 ☕ **Ko-fi**
 
-https://ko-fi.com
+https://ko-fi.com/sussjb99
 
 Support is entirely optional. The software will remain free and open source.
 
