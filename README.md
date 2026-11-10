@@ -11,8 +11,22 @@ A common workflow for non-duplex scanners is:
 
 PDF Duplex Merge Tool combines those files into a single document with pages in the proper reading order and can automatically correct page skew before merging.
 
-# Screenshot
+## Screenshot
+
 ![PDF Duplex Merge Main Window](images/image1.png)
+
+---
+
+## Download Standalone Executable
+
+If you do not want to install Python, you can use the pre-built portable application for Windows:
+
+1. Download the latest `PDFDuplexMerge-1.2-portable.zip` from the [Official Releases Page](https://github.com).
+2. Unzip the file into a directory of your choice.
+3. Open the folder and run `PDFDuplexMerge.exe` to launch the application.
+
+*Note: The complete folder structure must remain together for the application to run successfully.*
+
 ---
 
 ## Features
@@ -53,16 +67,6 @@ Result:
 
 ```text
 1, 2, 3, 4, 5, 6, 7, 8
-```
-
----
-
-## Screenshot
-
-*Add a screenshot of the GUI here.*
-
-```markdown
-![PDF Duplex Merge Tool](docs/screenshot-main-window.png)
 ```
 
 ---
@@ -133,6 +137,8 @@ python pdf_deskew.py input.pdf output.pdf
 
 ## Building the Portable Executable
 
+If you want to compile the executable yourself from source:
+
 ```cmd
 cd PDF_DuplexMerge
 
@@ -141,8 +147,7 @@ startenv.bat
 packaging\build.bat
 ```
 
-Output:
-
+Output directory:
 ```text
 dist\
 └── PDFDuplexMerge\
@@ -153,10 +158,6 @@ dist\
     ├── README.md
     └── THIRD-PARTY-NOTICES.txt
 ```
-
-The complete folder must remain together.
-
-No Python installation is required on the destination machine.
 
 ---
 
@@ -233,31 +234,11 @@ venv314\Scripts\pip install -r requirements.txt pyinstaller
 
 ### "'py' is not recognized"
 
-Use:
-
-```cmd
-python
-```
-
-instead of:
-
-```cmd
-py
-```
-
-or reinstall Python with the launcher enabled.
+Use `python` instead of `py`, or reinstall Python with the launcher enabled.
 
 ### Merge stalls during deskewing
 
-Verify Poppler is available.
-
-You can also set:
-
-```text
-POPPLER_PATH
-```
-
-to manually specify the Poppler location.
+Verify Poppler is available. You can also set `POPPLER_PATH` to manually specify the Poppler location.
 
 ---
 
@@ -267,7 +248,7 @@ If PDF Duplex Merge Tool saves you time, consider supporting development:
 
 ☕ **Ko-fi**
 
-https://ko-fi.com/sussjb99
+https://ko-fi.com
 
 Support is entirely optional. The software will remain free and open source.
 
@@ -277,14 +258,9 @@ Support is entirely optional. The software will remain free and open source.
 
 Copyright © 2026 sussjb99
 
-Licensed under:
+Licensed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.
 
-**GNU General Public License v3.0 or later (GPL-3.0-or-later)**
-
-See:
-
-- LICENSE.txt
-- https://www.gnu.org/licenses/
+See `LICENSE.txt` or [GNU Licenses](https://gnu.org) for details.
 
 ---
 
