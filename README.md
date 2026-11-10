@@ -21,7 +21,7 @@ PDF Duplex Merge Tool combines those files into a single document with pages in 
 
 If you do not want to install Python, you can use the pre-built portable application for Windows:
 
-1. Download the latest `PDFDuplexMerge-1.2-portable.zip` from the [Official Releases Page](https://github.com).
+1. Download the latest `PDFDuplexMerge-1.2-portable.zip` from the [Official Releases Page](https://github.com/sussjb99/PDFDuplexMerge/releases/tag/Release1).
 2. Unzip the file into a directory of your choice.
 3. Open the folder and run `PDFDuplexMerge.exe` to launch the application.
 
