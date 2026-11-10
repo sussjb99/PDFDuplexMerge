@@ -11,7 +11,7 @@ A common workflow for non-duplex scanners is:
 
 PDF Duplex Merge Tool combines those files into a single document with pages in the proper reading order and can automatically correct page skew before merging.
 
-# User Interface
+# Screenshot
 ![PDF Duplex Merge Main Window](images/image1.png)
 ---
 
